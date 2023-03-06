@@ -32,7 +32,7 @@ if response.status_code == 200:
         
         domains.append({'ip': ip, 'land': land, 'created': create_date_formatted, 'provider': provider})
 
-    yaml_data = yaml.dump({'INFO': domains})
+    yaml_data = yaml.dump(domains)
 
     with open('examen.yaml', 'w') as file:
         file.write(yaml_data)
